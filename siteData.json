@@ -9,7 +9,7 @@
         "project-team": "Project team",
         "samuel-lim": "Samuel Lim",
         "yang-qifeng": "Yang Qifeng",
-        "johnny-doe": "Johnny Doe",
+        "wei-bin": "Wei Bin",
         "jean-doe": "Jean Doe",
         "james-doe": "James Doe"
       },
@@ -153,6 +153,14 @@
       "title": "Samuel Lim's Project Portfolio Page",
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/weibin.md",
+      "title": "Wei Bin's Project Portfolio Page",
+      "headings": {
+        "project-bridalbuddy": "Project: BridalBuddy"
       },
       "headingKeywords": {}
     }
