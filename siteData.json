@@ -7,7 +7,11 @@
       "headings": {
         "about-us": "About Us",
         "project-team": "Project team",
-        "samuel-lim": "Samuel Lim"
+        "samuel-lim": "Samuel Lim",
+        "yang-qifeng": "Yang Qifeng",
+        "johnny-doe": "Johnny Doe",
+        "jean-doe": "Jean Doe",
+        "james-doe": "James Doe"
       },
       "headingKeywords": {}
     },
@@ -129,6 +133,11 @@
       "headings": {
         "addressbook-level-3": "AddressBook Level-3"
       },
+      "headingKeywords": {}
+    },
+    {
+      "src": "qifeng.md",
+      "headings": {},
       "headingKeywords": {}
     },
     {
