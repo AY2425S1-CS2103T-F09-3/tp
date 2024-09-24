@@ -7,11 +7,11 @@
       "headings": {
         "about-us": "About Us",
         "project-team": "Project team",
+        "tan-yi-xuan": "Tan Yi Xuan",
         "samuel-lim": "Samuel Lim",
         "yang-qifeng": "Yang Qifeng",
         "wei-bin": "Wei Bin",
-        "hovan-leong": "Hovan Leong",
-        "james-doe": "James Doe"
+        "hovan-leong": "Hovan Leong"
       },
       "headingKeywords": {}
     },
@@ -166,6 +166,14 @@
     {
       "src": "team/weibin.md",
       "title": "Wei Bin's Project Portfolio Page",
+      "headings": {
+        "project-bridalbuddy": "Project: BridalBuddy"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/yxtan02.md",
+      "title": "Tan Yi Xuan's Project Portfolio Page",
       "headings": {
         "project-bridalbuddy": "Project: BridalBuddy"
       },
