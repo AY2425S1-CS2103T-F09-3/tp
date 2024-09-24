@@ -10,7 +10,7 @@
         "samuel-lim": "Samuel Lim",
         "yang-qifeng": "Yang Qifeng",
         "wei-bin": "Wei Bin",
-        "jean-doe": "Jean Doe",
+        "hovan-leong": "Hovan Leong",
         "james-doe": "James Doe"
       },
       "headingKeywords": {}
@@ -138,6 +138,13 @@
     {
       "src": "qifeng.md",
       "headings": {},
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/hovanleong.md",
+      "headings": {
+        "project-bridalbuddy": "Project: BridalBuddy"
+      },
       "headingKeywords": {}
     },
     {
