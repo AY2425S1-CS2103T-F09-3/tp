@@ -136,11 +136,6 @@
       "headingKeywords": {}
     },
     {
-      "src": "qifeng.md",
-      "headings": {},
-      "headingKeywords": {}
-    },
-    {
       "src": "team/hovanleong.md",
       "headings": {
         "project-bridalbuddy": "Project: BridalBuddy"
@@ -153,6 +148,11 @@
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
       },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/qifeng.md",
+      "headings": {},
       "headingKeywords": {}
     },
     {
