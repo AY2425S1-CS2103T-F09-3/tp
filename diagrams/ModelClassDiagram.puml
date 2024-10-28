@@ -24,6 +24,7 @@ Class Guest
 Class Budget
 Class Rsvp
 Class Company
+Class Relation
 
 Class I #FFFFFF
 }
@@ -48,10 +49,11 @@ Person *--> Email
 Person *--> Address
 Person *--> "*" Tag
 
-Person <|--Vendor
-Person <|--Guest
+Person <|--- Vendor
+Person <|--- Guest
 
 Guest *--> Rsvp
+Guest *--> Relation
 Vendor *--> Company
 Vendor *--> Budget
 
