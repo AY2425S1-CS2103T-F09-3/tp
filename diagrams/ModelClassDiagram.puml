@@ -49,8 +49,8 @@ Person *--> Email
 Person *--> Address
 Person *--> "*" Tag
 
-Person <|--- Vendor
 Person <|--- Guest
+Person <|--- Vendor
 
 Guest *--> Rsvp
 Guest *--> Relation
