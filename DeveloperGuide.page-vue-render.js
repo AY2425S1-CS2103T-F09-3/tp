@@ -230,34 +230,19 @@ with(this){return _c('h3',{attrs:{"id":"use-cases"}},[_v("Use cases"),_c('a',{st
 with(this){return _c('p',[_v("(For all use cases below, the "),_c('strong',[_v("System")]),_v(" is the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("AddressBook")]),_v(" and the "),_c('strong',[_v("Actor")]),_v(" is the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("user")]),_v(", unless specified otherwise)")])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Use case: Add a Guest")])])}
+with(this){return _c('p',[_c('strong',[_v("Use case: Add a person")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User creates a new guest with the required details (e.g. name, email, etc.).")])]),_v(" "),_c('li',[_c('p',[_v("System adds the entry.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User creates a new person with the required details (e.g. name, email, role, etc.).")])]),_v(" "),_c('li',[_c('p',[_v("System adds the entry.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The provided details are incomplete or invalid (e.g. compulsory fields are not furnished).")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. System shows an error message and requests the user to re-enter the details.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. The input command was invalid (i.e. spelling error, etc.).")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. System tells the user the command is unrecognised.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
-},function anonymous(
-) {
-with(this){return _c('p',[_c('strong',[_v("Use case: Add a Vendor")])])}
-},function anonymous(
-) {
-with(this){return _c('p',[_c('strong',[_v("MSS")])])}
-},function anonymous(
-) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User creates a new vendor with the required details (e.g. name, email, etc.).")])]),_v(" "),_c('li',[_c('p',[_v("System adds the entry.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
-},function anonymous(
-) {
-with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
-},function anonymous(
-) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The provided details are incomplete or invalid (e.g. compulsory fields are not furnished).")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. System shows an error message and requests the user to re-enter the details.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. The input command was invalid (i.e. spelling error, etc.).")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. System tells the user the command is unrecognised.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The provided details are incomplete or invalid.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. System shows an error message and requests the user to re-enter the details.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. The input command was invalid (i.e. spelling error, etc.).")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. System tells the user the command is unrecognised.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Use Case: Update Details of Person")])])}
@@ -275,34 +260,49 @@ with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The input command was invalid (i.e. spelling error, etc.).")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. System tells the user the command is unrecognised.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. The new details are incomplete or invalid.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. System shows an error message and requests the user to re-enter the details.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Use Case: Delete a Person")])])}
+with(this){return _c('p',[_c('strong',[_v("Use Case: Delete a Guest")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to delete an entry.")])]),_v(" "),_c('li',[_c('p',[_v("System deletes the entry.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to delete a Guest entry.")])]),_v(" "),_c('li',[_c('p',[_v("System deletes the Guest entry.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The provided entry does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. System shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. The input command was invalid (i.e. spelling error, etc.).")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. System tells the user the command is unrecognised.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The provided Guest entry does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. System shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. The input command was invalid (i.e. spelling error, etc.).")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. System tells the user the command is unrecognised.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Use Case: Search and Filter Persons")])])}
+with(this){return _c('p',[_c('strong',[_v("Use Case: Delete a Vendor")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to search for or filter entries (e.g., by category, name, RSVP status).")])]),_v(" "),_c('li',[_c('p',[_v("System prompts for search or filter criteria.")])]),_v(" "),_c('li',[_c('p',[_v("User provides the criteria.")])]),_v(" "),_c('li',[_c('p',[_v("System displays the matching entries.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to delete a Vendor entry.")])]),_v(" "),_c('li',[_c('p',[_v("System deletes the Vendor entry.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The input command was invalid (i.e. spelling error, etc.).")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. System tells the user the command is unrecognised.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("4a. No matching entries are found.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("4a1. System shows a message indicating no results.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The provided Vendor entry does not exist.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. System shows an error message.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. The input command was invalid (i.e. spelling error, etc.).")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. System tells the user the command is unrecognised.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Use Case: Find Guests and Vendor with a particular field")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("MSS")])])}
+},function anonymous(
+) {
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to find Guest and Vendor entries with a specified field (e.g., by category, name, RSVP status).")])]),_v(" "),_c('li',[_c('p',[_v("System displays the matching Guest and Vendor entries.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The input command was invalid (i.e. spelling error, etc.).")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. System tells the user the command is unrecognised.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("2a. No matching entries are found.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("2a1. System shows a message indicating no results.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Use Case: Get statistics")])])}
@@ -395,6 +395,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases …​ }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Tue, 5 Nov 2024, 20:30:31 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Tue, 5 Nov 2024, 20:44:17 GMT+8]")])])])}
 }];
   
