@@ -12,7 +12,7 @@ Class MainWindow
 Class HelpWindow
 Class ResultDisplay
 Class PersonListPanel
-Class PersonCard
+Class PersonListCard
 Class CommandBox
 }
 
@@ -34,17 +34,17 @@ MainWindow *-down-> "1" ResultDisplay
 MainWindow *-down-> "2" PersonListPanel
 MainWindow --> "0..1" HelpWindow
 
-PersonListPanel -down-> "*" PersonCard
+PersonListPanel -down-> "*" PersonListCard
 
 MainWindow -left-|> UiPart
 
 ResultDisplay --|> UiPart
 CommandBox --|> UiPart
 PersonListPanel --|> UiPart
-PersonCard --|> UiPart
+PersonListCard --|> UiPart
 HelpWindow --|> UiPart
 
-PersonCard ..> Model
+PersonListCard ..> Model
 UiManager -right-> Logic
 MainWindow -left-> Logic
 
