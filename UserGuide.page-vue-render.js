@@ -224,7 +224,7 @@ with(this){return _c('h3',{attrs:{"id":"finding-a-person-find"}},[_v("Finding a 
 with(this){return _c('p',[_c('strong',[_v("Format:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [rsvp/RSVP] [r/relation] [c/COMPANY] [b/BUDGET] [t/TAG]...")])])}
 },function anonymous(
 ) {
-with(this){return _c('blockquote',[_c('p',[_v("⚠️ Only one type of prefix should be used for each find command.")])])}
+with(this){return _c('blockquote',[_c('p',[_v("⚠️ Only one type of "),_c('a',{attrs:{"href":"#glossary"}},[_v("prefix")]),_v(" should be used for each find command.")])])}
 },function anonymous(
 ) {
 with(this){return _c('ul',[_c('li',[_v("Specifying multiple different prefixes (e.g. "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find n/John p/12345")]),_v(") will result in an invalid command")]),_v(" "),_c('li',[_v("The prefix specified in the command indicates the attribute to be searched (e.g. "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find n/NAME")]),_v(" searches for guests and vendors whose name matches the given keyword)")]),_v(" "),_c('li',[_v("The search is case-insensitive for all fields (e.g. "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("jOhN")]),_v(" will match "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("John")]),_v(")")]),_v(" "),_c('li',[_v("The order of the keywords does not matter. e.g. "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("John Doe")]),_v(" will match "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Doe John")])]),_v(" "),_c('li',[_v("Only full words will be matched e.g. "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Jo")]),_v(" will not match "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("John")])]),_v(" "),_c('li',[_v("Guest/Vendor matching "),_c('strong',[_v("any")]),_v(" of the keywords will be returned (e.g. "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("John Tan")]),_v(" will return "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("John Doe")]),_v(" and "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Alan Tan")]),_v(")")])])}
@@ -500,6 +500,6 @@ with(this){return _c('div',{staticClass:"table-responsive"},[_c('table',{staticC
 with(this){return _c('p',[_c('a',{attrs:{"href":"#table-of-contents"}},[_c('em',[_v("Back to Top")])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Tue, 5 Nov 2024, 22:20:20 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Tue, 5 Nov 2024, 22:21:46 GMT+8]")])])])}
 }];
   
