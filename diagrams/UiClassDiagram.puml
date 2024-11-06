@@ -12,8 +12,8 @@ Class MainWindow
 Class HelpWindow
 Class ResultDisplay
 Class PersonListPanel
-Class PersonListCard
 Class CommandBox
+Class PersonListCard
 }
 
 package Model <<Rectangle>> {
