@@ -1,0 +1,78 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":AddGuestCommandParser" as AddGuestCommandParser LOGIC_COLOR
+participant "a:AddGuestCommand" as AddGuestCommand LOGIC_COLOR
+participant "r:CommandResult" as CommandResult LOGIC_COLOR
+end box
+
+box Model MODEL_COLOR_T1
+participant "guest:Guest" as Guest MODEL_COLOR
+participant "m:Model" as Model MODEL_COLOR
+end box
+
+[-> LogicManager : execute("add_guest n/Joe p/98765432 e/joe@gmail.com a/Nexus")
+activate LogicManager
+
+LogicManager -> AddressBookParser : parseCommand("add_guest n/Joe p/98765432 e/joe@gmail.com a/Nexus")
+activate AddressBookParser
+
+create AddGuestCommandParser
+AddressBookParser -> AddGuestCommandParser
+activate AddGuestCommandParser
+
+AddGuestCommandParser --> AddressBookParser
+deactivate AddGuestCommandParser
+
+AddressBookParser -> AddGuestCommandParser : parse("n/Joe p/98765432 e/joe@gmail.com a/Nexus")
+activate AddGuestCommandParser
+
+create Guest
+AddGuestCommandParser -> Guest
+activate Guest
+
+Guest --> AddGuestCommandParser : guest
+deactivate Guest
+
+create AddGuestCommand
+AddGuestCommandParser -> AddGuestCommand
+activate AddGuestCommand
+
+AddGuestCommand --> AddGuestCommandParser : new AddGuestCommand(guest)
+deactivate AddGuestCommand
+
+AddGuestCommandParser --> AddressBookParser : a
+deactivate AddGuestCommandParser
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+AddGuestCommandParser -[hidden]-> AddressBookParser
+destroy AddGuestCommandParser
+
+AddressBookParser --> LogicManager : a
+deactivate AddressBookParser
+
+LogicManager -> AddGuestCommand : execute(m)
+activate AddGuestCommand
+
+AddGuestCommand -> Model : addPerson(guest)
+activate Model
+
+Model --> AddGuestCommand
+deactivate Model
+
+create CommandResult
+AddGuestCommand -> CommandResult
+activate CommandResult
+
+CommandResult --> AddGuestCommand
+deactivate CommandResult
+
+AddGuestCommand --> LogicManager : r
+deactivate AddGuestCommand
+
+[<--LogicManager
+deactivate LogicManager
+@enduml
