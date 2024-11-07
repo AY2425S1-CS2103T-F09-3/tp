@@ -52,6 +52,7 @@
         "common-classes": "Common classes",
         "implementation": "Implementation",
         "add-guest-feature": "Add Guest feature",
+        "edit-guest-feature": "Edit Guest feature",
         "find-feature": "Find feature",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
