@@ -36,11 +36,14 @@ FindCommandParser -> ParserUtil : parseNamePredicate(argMultimap.getValue(PREFIX
 activate ParserUtil
 
 create NameContainsKeywordsPredicate
-ParserUtil --> NameContainsKeywordsPredicate
+ParserUtil -> NameContainsKeywordsPredicate
 activate NameContainsKeywordsPredicate
 
-NameContainsKeywordsPredicate -> ParserUtil : predicate
+NameContainsKeywordsPredicate --> ParserUtil : predicate
+deactivate NameContainsKeywordsPredicate
+
 ParserUtil --> FindCommandParser : predicate
+deactivate ParserUtil
 
 create FindCommand
 FindCommandParser -> FindCommand : new FindCommand(predicate)
