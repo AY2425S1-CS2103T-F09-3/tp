@@ -64,7 +64,7 @@ activate Model
 Model --> EditGuestCommand : filteredGuestList
 deactivate Model
 
-EditGuestCommand -> EditGuestCommand : createEditedGuest(guestToEdit, e)
+EditGuestCommand -> EditGuestCommand : createEditedGuest(guestToEdit, d)
 activate EditGuestCommand
 
 create Guest
