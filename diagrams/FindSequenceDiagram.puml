@@ -1,0 +1,82 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":FindCommandParser" as FindCommandParser LOGIC_COLOR
+participant ":ParserUtil" as ParserUtil LOGIC_COLOR
+participant "predicate:NameContainsKeywordsPredicate" as NameContainsKeywordsPredicate LOGIC_COLOR
+participant "f:FindCommand" as FindCommand LOGIC_COLOR
+participant "r:CommandResult" as CommandResult LOGIC_COLOR
+end box
+
+box Model MODEL_COLOR_T1
+participant "m:Model" as Model MODEL_COLOR
+end box
+
+[-> LogicManager : execute("find n/John")
+activate LogicManager
+
+LogicManager -> AddressBookParser : parseCommand("find n/John")
+activate AddressBookParser
+
+create FindCommandParser
+AddressBookParser -> FindCommandParser
+activate FindCommandParser
+
+FindCommandParser --> AddressBookParser
+deactivate FindCommandParser
+
+AddressBookParser -> FindCommandParser : parse("n/John")
+activate FindCommandParser
+
+FindCommandParser -> ParserUtil : parseNamePredicate(argMultimap.getValue(PREFIX_NAME).get())
+activate ParserUtil
+
+create NameContainsKeywordsPredicate
+ParserUtil --> NameContainsKeywordsPredicate
+activate NameContainsKeywordsPredicate
+
+NameContainsKeywordsPredicate -> ParserUtil : predicate
+ParserUtil --> FindCommandParser : predicate
+
+create FindCommand
+FindCommandParser -> FindCommand : new FindCommand(predicate)
+activate FindCommand
+
+FindCommand --> FindCommandParser : f
+deactivate FindCommand
+
+FindCommandParser --> AddressBookParser : f
+deactivate FindCommandParser
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+FindCommandParser -[hidden]-> AddressBookParser
+destroy FindCommandParser
+
+AddressBookParser --> LogicManager : f
+deactivate AddressBookParser
+
+LogicManager -> FindCommand : execute(m)
+activate FindCommand
+
+FindCommand -> Model : updateFilteredPersonList(predicate)
+activate Model
+
+Model --> FindCommand
+deactivate Model
+
+create CommandResult
+FindCommand -> CommandResult
+activate CommandResult
+
+CommandResult --> FindCommand : r
+deactivate CommandResult
+
+FindCommand --> LogicManager : r
+deactivate FindCommand
+
+[<--LogicManager
+deactivate LogicManager
+@enduml
