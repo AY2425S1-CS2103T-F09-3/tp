@@ -61,15 +61,19 @@ activate EditGuestCommand
 EditGuestCommand -> Model : getFilteredGuestList()
 activate Model
 
-Model --> EditGuestCommand
+Model --> EditGuestCommand : filteredGuestList
 deactivate Model
+
+EditGuestCommand -> EditGuestCommand : createEditedGuest(guestToEdit, e)
+activate EditGuestCommand
 
 create Guest
 EditGuestCommand -> Guest
-
 activate Guest
+
 Guest --> EditGuestCommand : editedGuest
 deactivate Guest
+return editedGuest
 
 EditGuestCommand -> Model : setPerson(guestToEdit, editedGuest)
 activate Model

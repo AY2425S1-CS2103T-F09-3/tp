@@ -73,13 +73,13 @@ deactivate Model
 FindCommand -> Model : getFilteredGuestListCount()
 activate Model
 
-Model --> FindCommand
+Model --> FindCommand : guestCount
 deactivate Model
 
 FindCommand -> Model : getFilteredVendorListCount()
 activate Model
 
-Model --> FindCommand
+Model --> FindCommand : vendorCount
 deactivate Model
 
 create CommandResult
