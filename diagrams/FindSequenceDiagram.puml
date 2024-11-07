@@ -7,12 +7,12 @@ participant ":LogicManager" as LogicManager LOGIC_COLOR
 participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
 participant ":FindCommandParser" as FindCommandParser LOGIC_COLOR
 participant ":ParserUtil" as ParserUtil LOGIC_COLOR
-participant "predicate:NameContainsKeywordsPredicate" as NameContainsKeywordsPredicate LOGIC_COLOR
 participant "f:FindCommand" as FindCommand LOGIC_COLOR
 participant "r:CommandResult" as CommandResult LOGIC_COLOR
 end box
 
 box Model MODEL_COLOR_T1
+participant "predicate:NameContainsKeywordsPredicate" as NameContainsKeywordsPredicate MODEL_COLOR
 participant "m:Model" as Model MODEL_COLOR
 end box
 
@@ -65,6 +65,18 @@ LogicManager -> FindCommand : execute(m)
 activate FindCommand
 
 FindCommand -> Model : updateFilteredPersonList(predicate)
+activate Model
+
+Model --> FindCommand
+deactivate Model
+
+FindCommand -> Model : getFilteredGuestListCount()
+activate Model
+
+Model --> FindCommand
+deactivate Model
+
+FindCommand -> Model : getFilteredVendorListCount()
 activate Model
 
 Model --> FindCommand

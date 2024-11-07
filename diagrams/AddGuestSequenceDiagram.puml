@@ -57,6 +57,12 @@ deactivate AddressBookParser
 LogicManager -> AddGuestCommand : execute(m)
 activate AddGuestCommand
 
+AddGuestCommand -> Model : hasPerson(guest)
+activate Model
+
+Model --> AddGuestCommand
+deactivate Model
+
 AddGuestCommand -> Model : addPerson(guest)
 activate Model
 
