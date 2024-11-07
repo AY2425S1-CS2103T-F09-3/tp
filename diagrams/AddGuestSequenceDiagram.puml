@@ -39,10 +39,10 @@ Guest --> AddGuestCommandParser : guest
 deactivate Guest
 
 create AddGuestCommand
-AddGuestCommandParser -> AddGuestCommand
+AddGuestCommandParser -> AddGuestCommand : new AddGuestCommand(guest)
 activate AddGuestCommand
 
-AddGuestCommand --> AddGuestCommandParser : new AddGuestCommand(guest)
+AddGuestCommand --> AddGuestCommandParser : a
 deactivate AddGuestCommand
 
 AddGuestCommandParser --> AddressBookParser : a
@@ -67,7 +67,7 @@ create CommandResult
 AddGuestCommand -> CommandResult
 activate CommandResult
 
-CommandResult --> AddGuestCommand
+CommandResult --> AddGuestCommand : r
 deactivate CommandResult
 
 AddGuestCommand --> LogicManager : r
