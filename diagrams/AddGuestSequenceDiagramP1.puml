@@ -10,10 +10,10 @@ participant ":AddGuestCommandParser" as AddGuestCommandParser LOGIC_COLOR
 participant "a:AddGuestCommand" as AddGuestCommand LOGIC_COLOR
 end box
 
-[-> LogicManager : execute("add_guest n/Joe p/98765432 e/joe@gmail.com a/Nexus")
+[-> LogicManager : execute(C)
 activate LogicManager
 
-LogicManager -> AddressBookParser : parseCommand("add_guest n/Joe p/98765432 e/joe@gmail.com a/Nexus")
+LogicManager -> AddressBookParser : parseCommand(C)
 activate AddressBookParser
 
 create AddGuestCommandParser
@@ -23,7 +23,7 @@ activate AddGuestCommandParser
 AddGuestCommandParser --> AddressBookParser
 deactivate AddGuestCommandParser
 
-AddressBookParser -> AddGuestCommandParser : parse("n/Joe p/98765432 e/joe@gmail.com a/Nexus")
+AddressBookParser -> AddGuestCommandParser : parse(C, excluding the add_guest part in front)
 activate AddGuestCommandParser
 
 ref over AddGuestCommandParser
