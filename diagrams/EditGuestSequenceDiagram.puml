@@ -67,12 +67,6 @@ deactivate Model
 EditGuestCommand -> EditGuestCommand : createEditedGuest(guestToEdit, d)
 activate EditGuestCommand
 
-create Guest
-EditGuestCommand -> Guest
-activate Guest
-
-Guest --> EditGuestCommand : editedGuest
-deactivate Guest
 return editedGuest
 
 EditGuestCommand -> Model : setPerson(guestToEdit, editedGuest)

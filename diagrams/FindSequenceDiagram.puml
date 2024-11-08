@@ -12,7 +12,7 @@ participant "r:CommandResult" as CommandResult LOGIC_COLOR
 end box
 
 box Model MODEL_COLOR_T1
-participant "predicate:NameContainsKeywordsPredicate" as NameContainsKeywordsPredicate MODEL_COLOR
+participant "p:NameContainsKeywordsPredicate" as NameContainsKeywordsPredicate MODEL_COLOR
 participant "m:Model" as Model MODEL_COLOR
 end box
 
@@ -32,21 +32,21 @@ deactivate FindCommandParser
 AddressBookParser -> FindCommandParser : parse("n/John")
 activate FindCommandParser
 
-FindCommandParser -> ParserUtil : parseNamePredicate(argMultimap.getValue(PREFIX_NAME).get())
+FindCommandParser -> ParserUtil : parseNamePredicate(...)
 activate ParserUtil
 
 create NameContainsKeywordsPredicate
 ParserUtil -> NameContainsKeywordsPredicate
 activate NameContainsKeywordsPredicate
 
-NameContainsKeywordsPredicate --> ParserUtil : predicate
+NameContainsKeywordsPredicate --> ParserUtil : p
 deactivate NameContainsKeywordsPredicate
 
-ParserUtil --> FindCommandParser : predicate
+ParserUtil --> FindCommandParser : p
 deactivate ParserUtil
 
 create FindCommand
-FindCommandParser -> FindCommand : new FindCommand(predicate)
+FindCommandParser -> FindCommand : new FindCommand(p)
 activate FindCommand
 
 FindCommand --> FindCommandParser : f
@@ -64,7 +64,7 @@ deactivate AddressBookParser
 LogicManager -> FindCommand : execute(m)
 activate FindCommand
 
-FindCommand -> Model : updateFilteredPersonList(predicate)
+FindCommand -> Model : updateFilteredPersonList(p)
 activate Model
 
 Model --> FindCommand
