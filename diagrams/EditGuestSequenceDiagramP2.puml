@@ -1,0 +1,28 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+
+box Logic LOGIC_COLOR_T1
+participant ":EditGuestCommandParser" as EditGuestCommandParser LOGIC_COLOR
+participant "d:EditGuestDescriptor" as EditGuestDescriptor LOGIC_COLOR
+participant "e:EditGuestCommand" as EditGuestCommand LOGIC_COLOR
+end box
+
+group sd create EditGuestDescriptor object and EditGuestCommand object
+    activate EditGuestCommandParser
+    create EditGuestDescriptor
+    EditGuestCommandParser -> EditGuestDescriptor
+    activate EditGuestDescriptor
+
+    EditGuestDescriptor --> EditGuestCommandParser : d
+    deactivate EditGuestDescriptor
+
+    create EditGuestCommand
+    EditGuestCommandParser -> EditGuestCommand : new EditGuestCommand(index, d)
+    activate EditGuestCommand
+
+    EditGuestCommand --> EditGuestCommandParser : e
+    deactivate EditGuestCommand
+end
+
+@enduml

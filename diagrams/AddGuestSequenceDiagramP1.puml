@@ -1,18 +1,13 @@
 @startuml
 !include style.puml
 skinparam ArrowFontStyle plain
+skinparam sequenceReferenceBackgroundColor lightgrey
 
 box Logic LOGIC_COLOR_T1
 participant ":LogicManager" as LogicManager LOGIC_COLOR
 participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
 participant ":AddGuestCommandParser" as AddGuestCommandParser LOGIC_COLOR
 participant "a:AddGuestCommand" as AddGuestCommand LOGIC_COLOR
-participant "r:CommandResult" as CommandResult LOGIC_COLOR
-end box
-
-box Model MODEL_COLOR_T1
-participant "guest:Guest" as Guest MODEL_COLOR
-participant "m:Model" as Model MODEL_COLOR
 end box
 
 [-> LogicManager : execute("add_guest n/Joe p/98765432 e/joe@gmail.com a/Nexus")
@@ -31,54 +26,29 @@ deactivate AddGuestCommandParser
 AddressBookParser -> AddGuestCommandParser : parse("n/Joe p/98765432 e/joe@gmail.com a/Nexus")
 activate AddGuestCommandParser
 
-create Guest
-AddGuestCommandParser -> Guest
-activate Guest
+ref over AddGuestCommandParser
+   create Guest object and AddGuestCommand object
+end ref
 
-Guest --> AddGuestCommandParser : guest
-deactivate Guest
-
-create AddGuestCommand
-AddGuestCommandParser -> AddGuestCommand : new AddGuestCommand(guest)
-activate AddGuestCommand
-
-AddGuestCommand --> AddGuestCommandParser : a
-deactivate AddGuestCommand
-
-AddGuestCommandParser --> AddressBookParser : a
+AddGuestCommandParser --> AddressBookParser : AddGuestCommand obj
 deactivate AddGuestCommandParser
 'Hidden arrow to position the destroy marker below the end of the activation bar.
 AddGuestCommandParser -[hidden]-> AddressBookParser
 destroy AddGuestCommandParser
 
-AddressBookParser --> LogicManager : a
+AddressBookParser --> LogicManager : AddGuestCommand obj
 deactivate AddressBookParser
 
 LogicManager -> AddGuestCommand : execute(m)
 activate AddGuestCommand
 
-AddGuestCommand -> Model : hasPerson(guest)
-activate Model
+ref over AddGuestCommand
+    execute add guest command
+end ref
 
-Model --> AddGuestCommand
-deactivate Model
-
-AddGuestCommand -> Model : addPerson(guest)
-activate Model
-
-Model --> AddGuestCommand
-deactivate Model
-
-create CommandResult
-AddGuestCommand -> CommandResult
-activate CommandResult
-
-CommandResult --> AddGuestCommand : r
-deactivate CommandResult
-
-AddGuestCommand --> LogicManager : r
+AddGuestCommand --> LogicManager : CommandResult obj
 deactivate AddGuestCommand
 
-[<--LogicManager
+[<--LogicManager : CommandResult obj
 deactivate LogicManager
 @enduml

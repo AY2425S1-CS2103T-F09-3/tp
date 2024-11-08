@@ -1,6 +1,7 @@
 @startuml
 !include style.puml
 skinparam ArrowFontStyle plain
+skinparam sequenceReferenceBackgroundColor lightgrey
 
 box Logic LOGIC_COLOR_T1
 participant ":LogicManager" as LogicManager LOGIC_COLOR
@@ -8,11 +9,6 @@ participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
 participant ":FindCommandParser" as FindCommandParser LOGIC_COLOR
 participant ":ParserUtil" as ParserUtil LOGIC_COLOR
 participant "f:FindCommand" as FindCommand LOGIC_COLOR
-participant "r:CommandResult" as CommandResult LOGIC_COLOR
-end box
-
-box Model MODEL_COLOR_T1
-participant "m:Model" as Model MODEL_COLOR
 end box
 
 [-> LogicManager : execute("find n/John")
@@ -31,59 +27,29 @@ deactivate FindCommandParser
 AddressBookParser -> FindCommandParser : parse("n/John")
 activate FindCommandParser
 
-FindCommandParser -> ParserUtil : parseNamePredicate(...)
-activate ParserUtil
+ref over FindCommandParser
+    create predicate object and FindCommand object
+end ref
 
-ParserUtil --> FindCommandParser : p
-deactivate ParserUtil
-
-create FindCommand
-FindCommandParser -> FindCommand : new FindCommand(p)
-activate FindCommand
-
-FindCommand --> FindCommandParser : f
-deactivate FindCommand
-
-FindCommandParser --> AddressBookParser : f
+FindCommandParser --> AddressBookParser : FindCommand obj
 deactivate FindCommandParser
 'Hidden arrow to position the destroy marker below the end of the activation bar.
 FindCommandParser -[hidden]-> AddressBookParser
 destroy FindCommandParser
 
-AddressBookParser --> LogicManager : f
+AddressBookParser --> LogicManager : FindCommand obj
 deactivate AddressBookParser
 
 LogicManager -> FindCommand : execute(m)
 activate FindCommand
 
-FindCommand -> Model : updateFilteredPersonList(p)
-activate Model
+ref over FindCommand
+    execute find command
+end ref
 
-Model --> FindCommand
-deactivate Model
-
-FindCommand -> Model : getFilteredGuestListCount()
-activate Model
-
-Model --> FindCommand : guestCount
-deactivate Model
-
-FindCommand -> Model : getFilteredVendorListCount()
-activate Model
-
-Model --> FindCommand : vendorCount
-deactivate Model
-
-create CommandResult
-FindCommand -> CommandResult
-activate CommandResult
-
-CommandResult --> FindCommand : r
-deactivate CommandResult
-
-FindCommand --> LogicManager : r
+FindCommand --> LogicManager : CommandResult obj
 deactivate FindCommand
 
-[<--LogicManager
+[<--LogicManager : CommandResult obj
 deactivate LogicManager
 @enduml

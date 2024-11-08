@@ -1,0 +1,56 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+skinparam sequenceReferenceBackgroundColor lightgrey
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":EditGuestCommandParser" as EditGuestCommandParser LOGIC_COLOR
+participant "d:EditGuestDescriptor" as EditGuestDescriptor LOGIC_COLOR
+participant "e:EditGuestCommand" as EditGuestCommand LOGIC_COLOR
+end box
+
+[-> LogicManager : execute("edit_guest 1 n/Amy")
+activate LogicManager
+
+LogicManager -> AddressBookParser : parseCommand("edit_guest 1 n/Amy")
+activate AddressBookParser
+
+create EditGuestCommandParser
+AddressBookParser -> EditGuestCommandParser
+activate EditGuestCommandParser
+
+EditGuestCommandParser --> AddressBookParser
+deactivate EditGuestCommandParser
+
+AddressBookParser -> EditGuestCommandParser : parse("1 n/Amy")
+activate EditGuestCommandParser
+
+ref over EditGuestCommandParser
+    create EditGuestDescriptor object and EditGuestCommand object
+end ref
+
+EditGuestCommandParser --> AddressBookParser : EditGuestCommand obj
+deactivate EditGuestCommandParser
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+EditGuestCommandParser -[hidden]-> AddressBookParser
+destroy EditGuestCommandParser
+
+AddressBookParser --> LogicManager : EditGuestCommand obj
+deactivate AddressBookParser
+
+LogicManager -> EditGuestCommand : execute(m)
+activate EditGuestCommand
+
+ref over EditGuestCommand
+    execute edit guest command
+end ref
+
+EditGuestCommand --> LogicManager : CommandResult obj
+deactivate EditGuestCommand
+
+[<--LogicManager : CommandResult obj
+deactivate LogicManager
+
+@enduml

@@ -1,0 +1,35 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+
+box Logic LOGIC_COLOR_T1
+participant "a:AddGuestCommand" as AddGuestCommand LOGIC_COLOR
+participant "r:CommandResult" as CommandResult LOGIC_COLOR
+end box
+
+box Model MODEL_COLOR_T1
+participant "m:Model" as Model MODEL_COLOR
+end box
+
+group sd execute add guest command
+   activate AddGuestCommand
+   AddGuestCommand -> Model : hasPerson(guest)
+   activate Model
+
+   Model --> AddGuestCommand
+   deactivate Model
+
+   AddGuestCommand -> Model : addPerson(guest)
+   activate Model
+
+   Model --> AddGuestCommand
+   deactivate Model
+
+   create CommandResult
+   AddGuestCommand -> CommandResult
+   activate CommandResult
+
+   CommandResult --> AddGuestCommand : r
+   deactivate CommandResult
+end
+@enduml
