@@ -185,7 +185,7 @@ with(this){return _c('h3',{attrs:{"id":"product-scope"}},[_v("Product scope"),_c
 with(this){return _c('p',[_c('strong',[_v("Target user profile")]),_v(":")])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("Has a need to manage a significant number of contacts")]),_v(" "),_c('li',[_v("Has a need to manage different types of contacts (e.g. vendors, guests)")]),_v(" "),_c('li',[_v("Has a need to manage a few separate weddings concurrently")]),_v(" "),_c('li',[_v("Favours desktop applications over other alternatives")]),_v(" "),_c('li',[_v("Prefers keyboard commands over mouse interactions")]),_v(" "),_c('li',[_v("Adequately proficient with command-line applications")])])}
+with(this){return _c('ul',[_c('li',[_v("Has a need to manage a significant number of contacts")]),_v(" "),_c('li',[_v("Has a need to manage different types of contacts (e.g. vendors, guests)")]),_v(" "),_c('li',[_v("Favours desktop applications over other alternatives")]),_v(" "),_c('li',[_v("Prefers keyboard commands over mouse interactions")]),_v(" "),_c('li',[_v("Adequately proficient with command-line applications")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Value proposition")]),_v(":")])}
@@ -359,7 +359,7 @@ with(this){return _c('ul',[_c('li',[_c('strong',[_v("Java")]),_v(": Java is a pr
 with(this){return _c('p',[_c('strong',[_v("Non-technical")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('strong',[_v("Guest")]),_v(": A person invited to the wedding.")]),_v(" "),_c('li',[_c('strong',[_v("Vendor")]),_v(": A supplier providing services or goods for a wedding, such as photographers, florists, caterers, etc.")]),_v(" "),_c('li',[_c('strong',[_v("RSVP Status")]),_v(": The attendance response status of a guest. It can be either confirmed, pending, or declined.")]),_v(" "),_c('li',[_c('strong',[_v("Tag")]),_v(": A keyword or label assigned to an entry to categorize and easily filter it within the list.")]),_v(" "),_c('li',[_c('strong',[_v("Index")]),_v(": A numerical value representing the position of an entry in a list, used to reference and perform operations on the contact.")]),_v(" "),_c('li',[_c('strong',[_v("Prefix")]),_v(": Characters preceding details you input on the command line. Eg. n/ for name and e/ for email.")])])}
+with(this){return _c('ul',[_c('li',[_c('strong',[_v("Guest")]),_v(": A person invited to the wedding.")]),_v(" "),_c('li',[_c('strong',[_v("Vendor")]),_v(": A supplier providing services or goods for a wedding, such as photographers, florists, caterers, etc.")]),_v(" "),_c('li',[_c('strong',[_v("RSVP Status")]),_v(": The attendance response status of a guest. It can be either accepted, pending, or declined.")]),_v(" "),_c('li',[_c('strong',[_v("Tag")]),_v(": A keyword or label assigned to an entry to categorize and easily filter it within the list.")]),_v(" "),_c('li',[_c('strong',[_v("Index")]),_v(": A numerical value representing the position of an entry in a list, used to reference and perform operations on the contact.")]),_v(" "),_c('li',[_c('strong',[_v("Prefix")]),_v(": Characters preceding details you input on the command line. Eg. n/ for name and e/ for email.")])])}
 },function anonymous(
 ) {
 with(this){return _c('h2',{attrs:{"id":"appendix-b-planned-enhancements"}},[_c('strong',[_v("Appendix B: Planned Enhancements")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#appendix-b-planned-enhancements","onclick":"event.stopPropagation()"}})])}
@@ -500,6 +500,6 @@ with(this){return _c('p',[_c('strong',[_v("Effort Required")]),_v(": We develope
 with(this){return _c('p',[_c('strong',[_v("Achievements")]),_v(": The "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("stats")]),_v(" command offers users a quick overview of the total number of guests and vendors, providing planners with valuable insights at a glance.")])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Fri, 8 Nov 2024, 2:40:28 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Fri, 8 Nov 2024, 12:17:22 GMT+8]")])])])}
 }];
   
