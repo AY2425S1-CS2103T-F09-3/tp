@@ -18,11 +18,16 @@ Class ArgumentTokenizer
 Class Prefix
 }
 
+package Model {
+Class HiddenModel #FFFFFF
+}
+
 Class HiddenOutside #FFFFFF
 HiddenOutside ..> AddressBookParser
 
 AddressBookParser .down.> XYZCommandParser: <<create>>
 
+XYZCommandParser --> Model
 XYZCommandParser ..> XYZCommand : <<create>>
 AddressBookParser ..> Command : <<use>>
 XYZCommandParser .up.|> Parser

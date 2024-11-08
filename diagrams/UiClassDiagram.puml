@@ -9,7 +9,6 @@ Class "<<interface>>\nUi" as Ui
 Class "{abstract}\nUiPart" as UiPart
 Class UiManager
 Class MainWindow
-Class HelpWindow
 Class ResultDisplay
 Class PersonListPanel
 Class CommandBox
@@ -32,7 +31,6 @@ UiManager -down-> "1" MainWindow
 MainWindow *-down->  "1" CommandBox
 MainWindow *-down-> "1" ResultDisplay
 MainWindow *-down-> "2" PersonListPanel
-MainWindow --> "0..1" HelpWindow
 
 PersonListPanel -down-> "*" PersonListCard
 
@@ -42,13 +40,12 @@ ResultDisplay --|> UiPart
 CommandBox --|> UiPart
 PersonListPanel --|> UiPart
 PersonListCard --|> UiPart
-HelpWindow --|> UiPart
+
 
 PersonListCard ..> Model
 UiManager -right-> Logic
 MainWindow -left-> Logic
 
-HelpWindow -right[hidden]- CommandBox
 CommandBox -right[hidden]- ResultDisplay
 ResultDisplay -right[hidden]- PersonListPanel
 

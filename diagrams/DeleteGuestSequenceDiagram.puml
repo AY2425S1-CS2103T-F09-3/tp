@@ -49,7 +49,13 @@ deactivate AddressBookParser
 LogicManager -> DeleteGuestCommand : execute(m)
 activate DeleteGuestCommand
 
-DeleteGuestCommand -> Model : deletePerson(1)
+DeleteGuestCommand -> Model : getFilteredGuestList()
+activate Model
+
+Model --> DeleteGuestCommand
+deactivate Model
+
+DeleteGuestCommand -> Model : deletePerson(Guest to be deleted)
 activate Model
 
 Model --> DeleteGuestCommand
@@ -65,6 +71,6 @@ deactivate CommandResult
 DeleteGuestCommand --> LogicManager : r
 deactivate DeleteGuestCommand
 
-[<--LogicManager
+[<--LogicManager: r
 deactivate LogicManager
 @enduml

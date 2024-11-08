@@ -49,7 +49,13 @@ deactivate AddressBookParser
 LogicManager -> DeleteVendorCommand : execute(m)
 activate DeleteVendorCommand
 
-DeleteVendorCommand -> Model : deletePerson(1)
+DeleteVendorCommand -> Model: getFilteredVendorList()
+activate Model
+
+Model --> DeleteVendorCommand
+deactivate Model
+
+DeleteVendorCommand -> Model : deletePerson(Vendor to be deleted)
 activate Model
 
 Model --> DeleteVendorCommand
@@ -65,6 +71,6 @@ deactivate CommandResult
 DeleteVendorCommand --> LogicManager : r
 deactivate DeleteVendorCommand
 
-[<--LogicManager
+[<--LogicManager : r
 deactivate LogicManager
 @enduml
