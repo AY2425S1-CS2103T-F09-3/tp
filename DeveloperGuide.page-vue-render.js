@@ -350,13 +350,13 @@ with(this){return _c('ol',[_c('li',[_v("The system should respond to user input 
 with(this){return _c('h3',{attrs:{"id":"glossary"}},[_v("Glossary"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#glossary","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Technical")])])}
+with(this){return _c('p',[_c('strong',[_v("Technical terms")])])}
 },function anonymous(
 ) {
 with(this){return _c('ul',[_c('li',[_c('strong',[_v("Java")]),_v(": Java is a programming language that BridalBuddy is written in. It is required to run the application.")]),_v(" "),_c('li',[_c('strong',[_v("CLI")]),_v(": Command-Line Interface, a text-based interface used to interact with software by typing commands.")]),_v(" "),_c('li',[_c('strong',[_v("GUI")]),_v(": Graphical User Interface, a user interface that allows users to interact with the app through graphical elements such as buttons, text fields, and menus.")]),_v(" "),_c('li',[_c('strong',[_v("JAR")]),_v(": Java Archive, A file format used to package Java applications and libraries into a single, compressed file")]),_v(" "),_c('li',[_c('strong',[_v("JSON")]),_v(": JavaScript Object Notation, a lightweight data-interchange format for structuring and exchanging data")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Non-technical")])])}
+with(this){return _c('p',[_c('strong',[_v("Non-technical terms")])])}
 },function anonymous(
 ) {
 with(this){return _c('ul',[_c('li',[_c('strong',[_v("Guest")]),_v(": A person invited to the wedding.")]),_v(" "),_c('li',[_c('strong',[_v("Vendor")]),_v(": A supplier providing services or goods for a wedding, such as photographers, florists, caterers, etc.")]),_v(" "),_c('li',[_c('strong',[_v("RSVP Status")]),_v(": The attendance response status of a guest. It can be either accepted, pending, or declined.")]),_v(" "),_c('li',[_c('strong',[_v("Tag")]),_v(": A keyword or label assigned to an entry to categorize and easily filter it within the list.")]),_v(" "),_c('li',[_c('strong',[_v("Index")]),_v(": A numerical value representing the position of an entry in a list, used to reference and perform operations on the contact.")]),_v(" "),_c('li',[_c('strong',[_v("Prefix")]),_v(": Characters preceding details you input on the command line. E.g. n/ for name and e/ for email.")])])}
@@ -500,6 +500,6 @@ with(this){return _c('p',[_c('strong',[_v("Effort Required")]),_v(": We develope
 with(this){return _c('p',[_c('strong',[_v("Achievements")]),_v(": The "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("stats")]),_v(" command offers users a quick overview of the total number of guests and vendors, providing planners with valuable insights at a glance.")])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Sat, 9 Nov 2024, 2:11:47 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Sat, 9 Nov 2024, 2:14:28 GMT+8]")])])])}
 }];
   
