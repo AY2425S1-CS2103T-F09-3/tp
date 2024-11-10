@@ -22,7 +22,7 @@ group sd create Guest object and AddGuestCommand object
     deactivate Guest
 
     create AddGuestCommand
-    AddGuestCommandParser -> AddGuestCommand : new AddGuestCommand(guest)
+    AddGuestCommandParser -> AddGuestCommand : AddGuestCommand(guest)
     activate AddGuestCommand
 
     AddGuestCommand --> AddGuestCommandParser : a

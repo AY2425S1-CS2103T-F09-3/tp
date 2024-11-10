@@ -29,7 +29,7 @@ group sd create predicate object and FindCommand object
     deactivate ParserUtil
 
     create FindCommand
-    FindCommandParser -> FindCommand : new FindCommand(predicate)
+    FindCommandParser -> FindCommand : FindCommand(predicate)
     activate FindCommand
 
     FindCommand --> FindCommandParser : f

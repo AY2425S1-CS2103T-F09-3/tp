@@ -18,7 +18,7 @@ group sd create EditGuestDescriptor object and EditGuestCommand object
     deactivate EditGuestDescriptor
 
     create EditGuestCommand
-    EditGuestCommandParser -> EditGuestCommand : new EditGuestCommand(index, d)
+    EditGuestCommandParser -> EditGuestCommand : EditGuestCommand(index, d)
     activate EditGuestCommand
 
     EditGuestCommand --> EditGuestCommandParser : e
