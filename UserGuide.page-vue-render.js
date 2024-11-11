@@ -323,10 +323,10 @@ with(this){return _c('blockquote',[_c('p',[_v("⚠️ If you attempt to add a ne
 with(this){return _c('ul',[_c('li',[_c('p',[_v("ℹ️ As of now, BridalBuddy only supports one single word per "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("TAG")]),_v(".")])]),_v(" "),_c('li',[_c('p',[_v("ℹ️ As of now, BridalBuddy only supports alphanumeric characters and spaces for "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("NAME")]),_v(", and it should not be blank.")])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add_guest n/John Doe p/98765432 e/johnd@example.com a/311, Clementi Ave 2, #02-25 rsvp/A r/U t/friends t/owesMoney")])])}
+with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add_guest n/Alan Tan p/97462948 e/alantan@example.com a/123, Jurong Ave 12, #012-845 rsvp/d r/w")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add_guest n/Alan Tan p/97462948 e/alantan@example.com a/123, Jurong Ave 12, #012-845 rsvp/d r/w")])])}
+with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add_guest n/John Doe p/98765432 e/johnd@example.com a/311, Clementi Ave 2, #02-25 rsvp/A r/U t/friends t/owesMoney")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Entering the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add_guest n/John Doe p/98765432 e/johnd@example.com a/311, Clementi Ave 2, #02-25 rsvp/A r/U t/friends t/owesMoney")]),_v(" command returns the following result on your screen:")])}
@@ -359,10 +359,10 @@ with(this){return _c('blockquote',[_c('p',[_v("⚠️ At least 1 field of a "),_
 with(this){return _c('ul',[_c('li',[_c('p',[_v("ℹ️ As of now, BridalBuddy only supports one single word per "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("TAG")]),_v(".")])]),_v(" "),_c('li',[_c('p',[_v("ℹ️ As of now, BridalBuddy only supports alphanumeric characters and spaces for "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("NAME")]),_v(", and it should not be blank.")])]),_v(" "),_c('li',[_c('p',[_v("ℹ️ The "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("INDEX")]),_v(" you enter should be the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("INDEX")]),_v(" of the guest you want to edit on the "),_c('strong',[_v("exact guest list currently displayed on your screen")]),_v(".")]),_v(" "),_c('ul',[_c('li',[_v("Even if a "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("guest")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("John Doe")]),_v(" has an "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("INDEX")]),_v(" of 4 on the overall guest list, entering "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find n/John")]),_v(" followed by "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("edit_guest 1 p/91234567 e/johndoe@example.com")]),_v(" would still edit the details of "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("John Doe")]),_v(", assuming that there is only 1 guest with "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("John")]),_v(" in their name.")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("edit_guest 4 p/91234567 e/johndoe@example.com")])])}
+with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("edit_guest 2 p/98274626 e/helloworld@example.com")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("edit_guest 2 p/98274626 e/helloworld@example.com")])])}
+with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("edit_guest 4 p/91234567 e/johndoe@example.com")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Entering the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("edit_guest 4 p/91234567 e/johndoe@example.com")]),_v(" command returns the following result on your screen:")])}
@@ -419,10 +419,10 @@ with(this){return _c('blockquote',[_c('p',[_v("⚠️ If you attempt to add a ne
 with(this){return _c('ul',[_c('li',[_c('p',[_v("ℹ️ As of now, BridalBuddy only supports one single word per "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("TAG")]),_v(".")])]),_v(" "),_c('li',[_c('p',[_v("ℹ️ As of now, BridalBuddy only supports alphanumeric characters and spaces for "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("NAME")]),_v(", and it should not be blank.")])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add_vendor n/John Doe p/98765432 e/johnd@example.com a/311, Clementi Mall, #02-25 c/John's Florist b/1000 t/florist t/responsible")])])}
+with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add_vendor n/Alan Tan p/94838274 e/alantan@example.com a/842, Jurong Mall, #02-297 c/Alan's Jewellery b/100000.99")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add_vendor n/Alan Tan p/94838274 e/alantan@example.com a/842, Jurong Mall, #02-297 c/Alan's Jewellery b/100000.99")])])}
+with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add_vendor n/John Doe p/98765432 e/johnd@example.com a/311, Clementi Mall, #02-25 c/John's Florist b/1000 t/florist t/responsible")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Entering the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add_vendor n/John Doe p/98765432 e/johnd@example.com a/311, Clementi Mall, #02-25 c/John's Florist b/1000 t/florist t/responsible")]),_v(" command returns the following result on your screen:")])}
@@ -455,10 +455,10 @@ with(this){return _c('blockquote',[_c('p',[_v("⚠️ At least 1 field of a "),_
 with(this){return _c('ul',[_c('li',[_c('p',[_v("ℹ️ As of now, BridalBuddy only supports one single word per "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("TAG")]),_v(".")])]),_v(" "),_c('li',[_c('p',[_v("ℹ️ As of now, BridalBuddy only supports alphanumeric characters and spaces for "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("NAME")]),_v(", and it should not be blank.")])]),_v(" "),_c('li',[_c('p',[_v("ℹ️ The "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("INDEX")]),_v(" you enter should be the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("INDEX")]),_v(" of the vendor you want to edit on the "),_c('strong',[_v("exact vendor list currently displayed on your screen")]),_v(".")]),_v(" "),_c('ul',[_c('li',[_v("Even if a "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("vendor")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("John Doe")]),_v(" has an "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("INDEX")]),_v(" of 4 on the overall vendor list, entering "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("find n/John")]),_v(" followed by "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("edit_vendor 1 p/91234567 e/johndoe@example.com")]),_v(" would still edit the details of "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("John Doe")]),_v(", assuming that there is only 1 vendor with "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("John")]),_v(" in their name.")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("edit_vendor 4 p/91234567 e/johndoe@example.com")])])}
+with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("edit_vendor 2 p/82737573 e/hiworld@example.com")])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("edit_vendor 2 p/82737573 e/hiworld@example.com")])])}
+with(this){return _c('p',[_c('strong',[_v("Example Usage:")]),_v(" "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("edit_vendor 4 p/91234567 e/johndoe@example.com")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("Entering the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("edit_vendor 4 p/91234567 e/johndoe@example.com")]),_v(" command returns the following result on your screen:")])}
@@ -554,6 +554,6 @@ with(this){return _c('div',{staticClass:"table-responsive"},[_c('table',{staticC
 with(this){return _c('p',[_c('a',{attrs:{"href":"#table-of-contents"}},[_c('em',[_v("Back to Top")])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Mon, 11 Nov 2024, 18:48:39 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Mon, 11 Nov 2024, 18:53:48 GMT+8]")])])])}
 }];
   
