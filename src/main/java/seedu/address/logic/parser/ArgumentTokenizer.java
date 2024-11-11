@@ -45,8 +45,8 @@ public class ArgumentTokenizer {
                 .map(prefix -> " " + prefix.getPrefix())
                 .collect(Collectors.toSet());
 
-        // Use regex to find all prefixes in the form " <char or str>/"
-        Pattern pattern = Pattern.compile("\\s\\S+/");
+        // Use regex to find all prefixes in the form " <char or str>/" (stops after the first forward slash)
+        Pattern pattern = Pattern.compile("\\s\\w+/(?!/\\w+)");
         Matcher matcher = pattern.matcher(argsString);
 
         // Look through each prefix found
