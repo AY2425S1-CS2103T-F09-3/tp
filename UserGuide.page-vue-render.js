@@ -146,7 +146,7 @@ with(this){return _c('p',[_c('a',{attrs:{"href":"#table-of-contents"}},[_c('em',
 with(this){return _c('h3',{attrs:{"id":"deleting-persons"}},[_c('strong',[_v("Deleting persons")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#deleting-persons","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("Let's try the entering the following command in the Command Line: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete_vendor 1")]),_v(".")])}
+with(this){return _c('p',[_v("Let's try entering the following command in the Command Line: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("delete_vendor 1")]),_v(".")])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("This means you are deleting the first person that is currently being listed on your vendor list, which is "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Jane Tan")]),_v(".")])}
@@ -554,6 +554,6 @@ with(this){return _c('div',{staticClass:"table-responsive"},[_c('table',{staticC
 with(this){return _c('p',[_c('a',{attrs:{"href":"#table-of-contents"}},[_c('em',[_v("Back to Top")])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Mon, 11 Nov 2024, 20:58:24 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Mon, 11 Nov 2024, 21:02:33 GMT+8]")])])])}
 }];
   
