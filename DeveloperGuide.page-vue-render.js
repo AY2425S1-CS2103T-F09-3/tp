@@ -524,7 +524,7 @@ with(this){return _c('p',[_v("Currently, BridalBuddy's budget tracking feature o
 with(this){return _c('p',[_c('strong',[_v("Proposed Enhancement")])])}
 },function anonymous(
 ) {
-with(this){return _c('h3',{attrs:{"id":"extend-clear-command-to-clear-guests-and-vendors-separately"}},[_v("Extend clear command to clear Guests and Vendors Separately"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#extend-clear-command-to-clear-guests-and-vendors-separately","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h3',{attrs:{"id":"extend-clear-command-to-clear-guests-and-vendors-separately"}},[_v("Extend "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("clear")]),_v(" command to clear Guests and Vendors Separately"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#extend-clear-command-to-clear-guests-and-vendors-separately","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Feature Flaw in Current Implementation")]),_v("\nThe existing "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("clear")]),_v(" command in BridalBuddy deletes all Guests and Vendors.\nIn some situations, users might want to clear only either the Guest or Vendor list.\nThis command may cause some inconvenience as users would have to manually delete all Guests or all Vendors.")])}
@@ -683,6 +683,6 @@ with(this){return _c('p',[_c('strong',[_v("Effort Required")]),_v(": We develope
 with(this){return _c('p',[_c('strong',[_v("Achievements")]),_v(": The "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("stats")]),_v(" command offers users a quick overview of the total number of guests and vendors, providing planners with valuable insights at a glance.")])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Tue, 12 Nov 2024, 0:22:34 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Tue, 12 Nov 2024, 0:57:27 GMT+8]")])])])}
 }];
   
