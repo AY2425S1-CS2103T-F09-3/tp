@@ -314,7 +314,7 @@ with(this){return _c('p',[_c('strong',[_v("Use Case: UC07 - Find Guests and Vend
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to find Guest and Vendor entries with a specified field (e.g., by category, name, RSVP status).")])]),_v(" "),_c('li',[_c('p',[_v("System displays the matching Guest and Vendor entries.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to find Guest and Vendor entries with a specified field (e.g., by name).")])]),_v(" "),_c('li',[_c('p',[_v("System displays the matching Guest and Vendor entries.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
@@ -680,6 +680,6 @@ with(this){return _c('p',[_c('strong',[_v("Effort Required")]),_v(": We develope
 with(this){return _c('p',[_c('strong',[_v("Achievements")]),_v(": The "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("stats")]),_v(" command offers users a quick overview of the total number of guests and vendors, providing planners with valuable insights at a glance.")])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Tue, 12 Nov 2024, 1:22:19 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Tue, 12 Nov 2024, 1:27:48 GMT+8]")])])])}
 }];
   
