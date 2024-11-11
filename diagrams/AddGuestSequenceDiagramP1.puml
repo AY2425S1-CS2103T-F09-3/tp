@@ -10,10 +10,19 @@ participant ":AddGuestCommandParser" as AddGuestCommandParser LOGIC_COLOR
 participant "a:AddGuestCommand" as AddGuestCommand LOGIC_COLOR
 end box
 
-[-> LogicManager : execute(C)
+box Model MODEL_COLOR_T1
+participant "guest:Guest" as Guest MODEL_COLOR
+end box
+
+note left of LogicManager
+Let args be
+"n/Joe p/98765432
+e/joe@gmail.com a/Nexus"
+end note
+[-> LogicManager : execute(add_guest args)
 activate LogicManager
 
-LogicManager -> AddressBookParser : parseCommand(C)
+LogicManager -> AddressBookParser : parseCommand(add_guest args)
 activate AddressBookParser
 
 create AddGuestCommandParser
@@ -23,20 +32,29 @@ activate AddGuestCommandParser
 AddGuestCommandParser --> AddressBookParser
 deactivate AddGuestCommandParser
 
-AddressBookParser -> AddGuestCommandParser : parse(C, excluding the add_guest part in front)
+AddressBookParser -> AddGuestCommandParser : parse(args)
 activate AddGuestCommandParser
+create Guest
+AddGuestCommandParser -> Guest
+activate Guest
 
-ref over AddGuestCommandParser
-   create Guest object and AddGuestCommand object
-end ref
+Guest --> AddGuestCommandParser : guest
+deactivate Guest
 
-AddGuestCommandParser --> AddressBookParser : AddGuestCommand obj
+create AddGuestCommand
+AddGuestCommandParser -> AddGuestCommand : AddGuestCommand(guest)
+activate AddGuestCommand
+
+AddGuestCommand --> AddGuestCommandParser : a
+deactivate AddGuestCommand
+
+AddGuestCommandParser --> AddressBookParser : a
 deactivate AddGuestCommandParser
 'Hidden arrow to position the destroy marker below the end of the activation bar.
 AddGuestCommandParser -[hidden]-> AddressBookParser
 destroy AddGuestCommandParser
 
-AddressBookParser --> LogicManager : AddGuestCommand obj
+AddressBookParser --> LogicManager : a
 deactivate AddressBookParser
 
 LogicManager -> AddGuestCommand : execute(m)
@@ -46,9 +64,9 @@ ref over AddGuestCommand
     execute add guest command
 end ref
 
-AddGuestCommand --> LogicManager : CommandResult obj
+AddGuestCommand --> LogicManager : r
 deactivate AddGuestCommand
 
-[<--LogicManager : CommandResult obj
+[<--LogicManager : r
 deactivate LogicManager
 @enduml

@@ -27,17 +27,26 @@ deactivate FindCommandParser
 AddressBookParser -> FindCommandParser : parse("n/John")
 activate FindCommandParser
 
-ref over FindCommandParser
-    create predicate object and FindCommand object
-end ref
+FindCommandParser -> ParserUtil : parseNamePredicate(...)
+activate ParserUtil
 
-FindCommandParser --> AddressBookParser : FindCommand obj
+ParserUtil --> FindCommandParser : predicate
+deactivate ParserUtil
+
+create FindCommand
+FindCommandParser -> FindCommand : FindCommand(predicate)
+activate FindCommand
+
+FindCommand --> FindCommandParser : f
+deactivate FindCommand
+
+FindCommandParser --> AddressBookParser : f
 deactivate FindCommandParser
 'Hidden arrow to position the destroy marker below the end of the activation bar.
 FindCommandParser -[hidden]-> AddressBookParser
 destroy FindCommandParser
 
-AddressBookParser --> LogicManager : FindCommand obj
+AddressBookParser --> LogicManager : f
 deactivate AddressBookParser
 
 LogicManager -> FindCommand : execute(m)
@@ -47,9 +56,9 @@ ref over FindCommand
     execute find command
 end ref
 
-FindCommand --> LogicManager : CommandResult obj
+FindCommand --> LogicManager : r
 deactivate FindCommand
 
-[<--LogicManager : CommandResult obj
+[<--LogicManager : r
 deactivate LogicManager
 @enduml

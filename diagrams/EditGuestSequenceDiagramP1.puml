@@ -27,17 +27,27 @@ deactivate EditGuestCommandParser
 AddressBookParser -> EditGuestCommandParser : parse("1 n/Amy")
 activate EditGuestCommandParser
 
-ref over EditGuestCommandParser
-    create EditGuestDescriptor object and EditGuestCommand object
-end ref
+create EditGuestDescriptor
+EditGuestCommandParser -> EditGuestDescriptor
+activate EditGuestDescriptor
 
-EditGuestCommandParser --> AddressBookParser : EditGuestCommand obj
+EditGuestDescriptor --> EditGuestCommandParser : d
+deactivate EditGuestDescriptor
+
+create EditGuestCommand
+EditGuestCommandParser -> EditGuestCommand : EditGuestCommand(index, d)
+activate EditGuestCommand
+
+EditGuestCommand --> EditGuestCommandParser : e
+deactivate EditGuestCommand
+
+EditGuestCommandParser --> AddressBookParser : e
 deactivate EditGuestCommandParser
 'Hidden arrow to position the destroy marker below the end of the activation bar.
 EditGuestCommandParser -[hidden]-> AddressBookParser
 destroy EditGuestCommandParser
 
-AddressBookParser --> LogicManager : EditGuestCommand obj
+AddressBookParser --> LogicManager : e
 deactivate AddressBookParser
 
 LogicManager -> EditGuestCommand : execute(m)
@@ -47,10 +57,10 @@ ref over EditGuestCommand
     execute edit guest command
 end ref
 
-EditGuestCommand --> LogicManager : CommandResult obj
+EditGuestCommand --> LogicManager : r
 deactivate EditGuestCommand
 
-[<--LogicManager : CommandResult obj
+[<--LogicManager : r
 deactivate LogicManager
 
 @enduml
