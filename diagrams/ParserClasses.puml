@@ -25,11 +25,11 @@ Class HiddenModel #FFFFFF
 Class HiddenOutside #FFFFFF
 HiddenOutside ..> AddressBookParser
 
-AddressBookParser .down.> XYZCommandParser: create >
+AddressBookParser .down.> XYZCommandParser: <<create>>
 
 XYZCommandParser --> Model
-XYZCommandParser ..> XYZCommand : create >
-AddressBookParser ..> Command : use >
+XYZCommandParser ..> XYZCommand : <<create>>
+AddressBookParser ..> Command : <<use>>
 XYZCommandParser .up.|> Parser
 XYZCommandParser ..> ArgumentMultimap
 XYZCommandParser ..> ArgumentTokenizer
