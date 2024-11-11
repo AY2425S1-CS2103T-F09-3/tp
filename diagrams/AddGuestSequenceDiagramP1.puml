@@ -14,15 +14,10 @@ box Model MODEL_COLOR_T1
 participant "guest:Guest" as Guest MODEL_COLOR
 end box
 
-note left of LogicManager
-Let args be
-"n/Joe p/98765432
-e/joe@gmail.com a/Nexus"
-end note
-[-> LogicManager : execute(add_guest args)
+[-> LogicManager : execute(C)
 activate LogicManager
 
-LogicManager -> AddressBookParser : parseCommand(add_guest args)
+LogicManager -> AddressBookParser : parseCommand(C)
 activate AddressBookParser
 
 create AddGuestCommandParser
