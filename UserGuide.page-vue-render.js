@@ -167,7 +167,7 @@ with(this){return _c('h3',{attrs:{"id":"exiting-the-program"}},[_c('strong',[_v(
 with(this){return _c('p',[_v("It's been a long day at work. Now let's take a break and exit the application. All you have to do is simply enter the command "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("exit")]),_v(" in the Command Line, and the program will exit automatically in a few seconds!")])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("ℹ️ Not to worry, your progress will be auto-saved and all your work will be reflected correctly the next time u open the app.")])])}
+with(this){return _c('ul',[_c('li',[_v("ℹ️ Not to worry, your progress will be auto-saved and all your work will be reflected correctly the next time you open the app.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('a',{attrs:{"href":"#table-of-contents"}},[_c('em',[_v("Back to Top")])])])}
@@ -554,6 +554,6 @@ with(this){return _c('div',{staticClass:"table-responsive"},[_c('table',{staticC
 with(this){return _c('p',[_c('a',{attrs:{"href":"#table-of-contents"}},[_c('em',[_v("Back to Top")])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Mon, 11 Nov 2024, 20:54:15 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Mon, 11 Nov 2024, 20:58:24 GMT+8]")])])])}
 }];
   
