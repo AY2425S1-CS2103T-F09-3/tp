@@ -539,7 +539,7 @@ with(this){return _c('h2',{attrs:{"id":"appendix-c-instructions-for-manual-testi
 with(this){return _c('h3',{attrs:{"id":"launch-and-shutdown"}},[_v("Launch and shutdown"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#launch-and-shutdown","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("Initial launch")]),_v(" "),_c('p',[_v("i. Download the jar file and copy into an empty folder")]),_v(" "),_c('p',[_v("ii. Double-click the jar file Expected: Shows the GUI with a set of sample contacts. The window size may not be optimum.")])]),_v(" "),_c('li',[_c('p',[_v("Saving window preferences")]),_v(" "),_c('p',[_v("i. Resize the window to an optimum size. Move the window to a different location. Close the window.")]),_v(" "),_c('p',[_v("ii. Re-launch the app by double-clicking the jar file."),_c('br'),_v("\nExpected: The most recent window size and location is retained.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("Initial launch")]),_v(" "),_c('p',[_v("i. Download the jar file and copy into an empty folder")]),_v(" "),_c('p',[_v("ii. Double-click the jar file "),_c('br'),_v("\nExpected: Shows the GUI with a set of sample contacts. The window size may not be optimum.")])]),_v(" "),_c('li',[_c('p',[_v("Saving window preferences")]),_v(" "),_c('p',[_v("i. Resize the window to an optimum size. Move the window to a different location. Close the window.")]),_v(" "),_c('p',[_v("ii. Re-launch the app by double-clicking the jar file."),_c('br'),_v("\nExpected: The most recent window size and location is retained.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"viewing-all-guests-and-vendors"}},[_v("Viewing all Guests and Vendors"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#viewing-all-guests-and-vendors","onclick":"event.stopPropagation()"}})])}
@@ -683,6 +683,6 @@ with(this){return _c('p',[_c('strong',[_v("Effort Required")]),_v(": We develope
 with(this){return _c('p',[_c('strong',[_v("Achievements")]),_v(": The "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("stats")]),_v(" command offers users a quick overview of the total number of guests and vendors, providing planners with valuable insights at a glance.")])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Tue, 12 Nov 2024, 1:01:02 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Tue, 12 Nov 2024, 1:03:16 GMT+8]")])])])}
 }];
   
