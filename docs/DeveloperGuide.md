@@ -480,7 +480,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **Data Requirements**
 1. Size: The system should support storage for up to 300 guests and 300 vendors per wedding.
-1. Volatility: Guest lists and vendor details may change frequently, especially closer to the event date. Therefore, the system must accommodate dynamic data updates and edits.
+1. Volatility: Guest and vendor details may change frequently, especially closer to the event date. Therefore, the system must accommodate dynamic data updates and edits.
 1. Persistency: All guest and vendor information must be saved persistently in a JSON file and remain accessible even after system shutdown or failure.
 
 **Environment Requirements**
@@ -758,24 +758,24 @@ Prerequisites: List all Guests and Vendors using the `list` command. Multiple Gu
 1. Test case: `clear`<br>
     Expected: All Guests and Vendors deleted from their respective lists. Both lists have no contacts displayed. Success message is displayed in the status message.
 
-### Exiting Bridalbuddy
+### Exiting BridalBuddy
 
 1. Test case: `exit`<br>
-    Expected: Bridalbuddy closes.
+    Expected: BridalBuddy closes.
 
 ### Saving Data
 
 1. Dealing with missing data file<br>
     i. Delete the file named `bridalbuddy.json` located in the data folder.<br>
-    ii. Relaunch Bridalbuddy<br>
+    ii. Relaunch BridalBuddy<br>
     iii. Run the command `clear`<br>
         Expected: A new empty `bridalbuddy.json` file is created in the `data` folder. Sample Guests and Vendors are deleted.
 
 2. Dealing with corrupted data file<br>
     i. Open the `bridalbuddy.json` file located in the `data` folder with a text editor.<br>
     ii. Corrupt the file by deleting a few characters. Save the file.<br>
-    iii. Relaunch Bridalbuddy.<br>
-        Expected: No Guests and Vendors will be displayed in the Bridalbuddy.
+    iii. Relaunch BridalBuddy.<br>
+        Expected: No Guests and Vendors will be displayed in the BridalBuddy.
 
 --------------------------------------------------------------------------------------------------------------------
 
