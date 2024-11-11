@@ -140,7 +140,7 @@ with(this){return _c('h3',{attrs:{"id":"add-guest-feature"}},[_v("Add Guest feat
 with(this){return _c('p',[_v("The "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add_guest")]),_v(" command creates and adds a new "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Guest")]),_v(" object into the address book. The attributes of the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Guest")]),_v(" are specified through prefixes (n/, p/, e/, a/, rsvp/, r/ and t/) and their corresponding values")])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("The sequence diagrams below provide an overview for the execution flow of an "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add_guest")]),_v(" command.\n"),_c('br'),_v("\nIn the diagrams below:")])}
+with(this){return _c('p',[_v("The sequence diagrams below provide an overview for the execution flow of an "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add_guest")]),_v(" command.\n"),_c('br'),_v("\nNote: In the diagrams below,")])}
 },function anonymous(
 ) {
 with(this){return _c('ul',[_c('li',[_v("Let "),_c('strong',[_v("C")]),_v(" represent the command: \"add_guest n/Joe p/98765432 e/joe@gmail.com a/Nexus\"")]),_v(" "),_c('li',[_v("Let "),_c('strong',[_v("args")]),_v(" represent the arguments provided in the command: \"n/Joe p/98765432 e/joe@gmail.com a/Nexus\"")])])}
@@ -614,6 +614,6 @@ with(this){return _c('p',[_c('strong',[_v("Effort Required")]),_v(": We develope
 with(this){return _c('p',[_c('strong',[_v("Achievements")]),_v(": The "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("stats")]),_v(" command offers users a quick overview of the total number of guests and vendors, providing planners with valuable insights at a glance.")])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Mon, 11 Nov 2024, 12:49:02 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Mon, 11 Nov 2024, 13:03:19 GMT+8]")])])])}
 }];
   
