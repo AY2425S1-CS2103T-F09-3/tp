@@ -665,7 +665,7 @@ testers are expected to do more *exploratory* testing.
 ### Viewing all Guests and Vendors
 
 1. Test case: `list`<br>
-    Expected: All Guests and Vendors are displayed in their respective lists. Total number of Guests (pending, coming, not coming) and Vendors are displayed in the status message.
+    Expected: All Guests and Vendors are displayed in their respective lists. Total number of Guests (pending, coming, not coming) and Vendors is displayed in the status message.
 
 ### Adding a Guest
 
@@ -721,7 +721,7 @@ Prerequisites: List all Guests and Vendors using the `list` command. Multiple Gu
 2. Test case: `delete_guest 0`<br>
     Expected: No Guest is deleted. Error details shown in the status message. Status bar remains the same.
 
-3. Other incorrect delete commands to try: `delete_guest`, `delete_guest x`, `...` (where x is larger than the guest list size)<br>
+3. Other incorrect delete commands to try: `delete_guest`, `delete_guest x`, `...` (where x is larger than the Guest list size)<br>
     Expected: Similar to previous.
 
 ### Deleting a Vendor
@@ -729,12 +729,12 @@ Prerequisites: List all Guests and Vendors using the `list` command. Multiple Gu
 Prerequisites: List all Guests and Vendors using the `list` command. Multiple Guests and Vendors in each list.
 
 1. Test case: `delete_vendor 1`<br>
-   Expected: First Vendor is deleted from the Guest list. Details of the deleted Vendor shown in the status message. Timestamp in the status bar is updated.
+   Expected: First Vendor is deleted from the Vendor list. Details of the deleted Vendor shown in the status message. Timestamp in the status bar is updated.
 
 2. Test case: `delete_vendor 0`<br>
    Expected: No Vendor is deleted. Error details shown in the status message. Status bar remains the same.
 
-3. Other incorrect delete commands to try: `delete_vendor`, `delete_vendor x`, `...` (where x is larger than the guest list size)<br>
+3. Other incorrect delete commands to try: `delete_vendor`, `delete_vendor x`, `...` (where x is larger than the Guest list size)<br>
    Expected: Similar to previous.
 
 ### Finding Guest(s)/Vendor(s)
