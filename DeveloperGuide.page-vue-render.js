@@ -200,7 +200,7 @@ with(this){return _c('ul',[_c('li',[_v("Has a need to manage a significant numbe
 with(this){return _c('p',[_c('strong',[_v("Value proposition")]),_v(":")])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("Streamlined, all-in-one wedding planning tool")]),_v(" "),_c('li',[_v("Intuitive organisation and customisation")]),_v(" "),_c('li',[_v("Stress-free and efficient planning process")]),_v(" "),_c('li',[_v("One-stop companion for wedding planners")]),_v(" "),_c('li',[_v("Simplifies time-intensive and tedious tasks of managing guest lists, schedules, and vendor contacts")]),_v(" "),_c('li',[_v("Enhances efficiency by reducing time spent navigating complex GUIs")])])}
+with(this){return _c('ul',[_c('li',[_v("Streamlined, all-in-one wedding planning tool")]),_v(" "),_c('li',[_v("Intuitive organisation and customisation")]),_v(" "),_c('li',[_v("Stress-free and efficient planning process")]),_v(" "),_c('li',[_v("One-stop companion for wedding planners")]),_v(" "),_c('li',[_v("Simplifies time-intensive and tedious tasks of managing guest lists and vendor contacts")]),_v(" "),_c('li',[_v("Enhances efficiency by reducing time spent navigating complex GUIs")])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"user-stories"}},[_v("User stories"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#user-stories","onclick":"event.stopPropagation()"}})])}
@@ -683,6 +683,6 @@ with(this){return _c('p',[_c('strong',[_v("Effort Required")]),_v(": We develope
 with(this){return _c('p',[_c('strong',[_v("Achievements")]),_v(": The "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("stats")]),_v(" command offers users a quick overview of the total number of guests and vendors, providing planners with valuable insights at a glance.")])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Mon, 11 Nov 2024, 22:38:27 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Mon, 11 Nov 2024, 22:40:15 GMT+8]")])])])}
 }];
   
