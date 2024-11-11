@@ -32,7 +32,7 @@ with(this){return _c('div',{staticClass:"table-responsive"},[_c('table',{staticC
 with(this){return _c('h3',{attrs:{"id":"searching-for-what-you-need"}},[_v("Searching for what you need"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#searching-for-what-you-need","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('a',{attrs:{"href":"#quick-start"}},[_v("Quick Start")]),_v(" teaches you how to set up BridalBuddy.")]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#tutorial-for-beginners"}},[_v("Tutorial for Beginners")]),_v(" walks you through the basic features of BridalBuddy to get you started.")]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#features"}},[_v("Features")]),_v(" helps you understand how all our features work.")]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#faq"}},[_v("FAQ")]),_v(" clarifies the doubts that many of our users have.")]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#command-summary"}},[_v("Command Summary")]),_v(" summarises all our features for easy reference.")]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#table-of-contents"}},[_c('em',[_v("Back to Top")])]),_v(" gives you a convenient shortcut to go back to the table of contents.")])])}
+with(this){return _c('ol',[_c('li',[_c('a',{attrs:{"href":"#quick-start"}},[_v("Quick Start")]),_v(" teaches you how to set up BridalBuddy.")]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#tutorial-for-beginners"}},[_v("Tutorial for Beginners")]),_v(" walks you through the basic features of BridalBuddy to get you started.")]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#features"}},[_v("Features")]),_v(" helps you understand how all our features work.")]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#faq"}},[_v("FAQ")]),_v(" clarifies the doubts that many of our users have.")]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#command-summary"}},[_v("Command Summary")]),_v(" summarises all our features for easy reference.")]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#glossary"}},[_c('strong',[_v("Glossary")])]),_v(" explains the definitions of any technical terms used in this guide.")]),_v(" "),_c('li',[_c('a',{attrs:{"href":"#table-of-contents"}},[_c('em',[_v("Back to Top")])]),_v(" gives you a convenient shortcut to go back to the table of contents.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('a',{attrs:{"href":"#table-of-contents"}},[_c('em',[_v("Back to Top")])])])}
@@ -554,6 +554,6 @@ with(this){return _c('div',{staticClass:"table-responsive"},[_c('table',{staticC
 with(this){return _c('p',[_c('a',{attrs:{"href":"#table-of-contents"}},[_c('em',[_v("Back to Top")])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Mon, 11 Nov 2024, 18:53:48 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Mon, 11 Nov 2024, 19:15:38 GMT+8]")])])])}
 }];
   
