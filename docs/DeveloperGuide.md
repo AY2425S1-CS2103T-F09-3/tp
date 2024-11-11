@@ -184,7 +184,7 @@ Explanation:
    * Suppose the n/, p/, e/ and a/ prefixes and their values are provided (these are compulsory).
    * Then, a `Guest` object with name, phone number, email and address attributes will be created. <br> 
 4. An `AddGuestCommand` is then created with the new `Guest` object and returned.
-5. `LogicManager` executes the `AddGuestCommand`, which calls the `hasPerson` method of `Model` to check if the guest already exists in the address book. If the guest is not a duplicate (i.e. not same name and phone number as another guest), the `AddGuestCommand` then calls the `addPerson` method of the `Model` to add the guest into the address book.
+5. `LogicManager` executes the `AddGuestCommand`, which calls the `addPerson` method of the `Model` to add the guest into the address book.
 6. A `CommandResult` containing the success message is then returned to the `LogicManager` (and then back to the `UI` component).
 
 ### Edit Guest feature
