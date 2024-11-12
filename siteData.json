@@ -64,7 +64,7 @@
         "appendix-b-planned-enhancements": "Appendix B: Planned Enhancements",
         "support-for-managing-multiple-weddings": "Support for managing multiple weddings",
         "enhance-name-to-accept-special-characters": "Enhance name to accept special characters",
-        "restriction-on-prefix-usage-in-guest-vendor-commands": "Restriction on prefix usage in Guest/Vendor commands",
+        "improve-command-parsing-to-handle-common-characters-in-fields": "Improve command parsing to handle common characters in fields",
         "enhance-flexibility-in-phone-number-parameter-input": "Enhance flexibility in phone number parameter input",
         "enhance-find-command-to-allow-for-partial-and-substring-search": "Enhance find command to allow for partial and substring search",
         "enhance-find-command-to-allow-multiple-types-of-prefixes-to-be-used-for-each-find-command": "Enhance find command to allow multiple types of prefixes to be used for each find command",
